@@ -1,0 +1,7 @@
+E:\root\programming\React_CS\focusBackend\FocusApi\obj\Release\net6.0\FocusApi.csproj.AssemblyReference.cache
+E:\root\programming\React_CS\focusBackend\FocusApi\obj\Release\net6.0\FocusApi.GeneratedMSBuildEditorConfig.editorconfig
+E:\root\programming\React_CS\focusBackend\FocusApi\obj\Release\net6.0\FocusApi.AssemblyInfoInputs.cache
+E:\root\programming\React_CS\focusBackend\FocusApi\obj\Release\net6.0\FocusApi.AssemblyInfo.cs
+E:\root\programming\React_CS\focusBackend\FocusApi\obj\Release\net6.0\FocusApi.csproj.CoreCompileInputs.cache
+E:\root\programming\React_CS\focusBackend\FocusApi\obj\Release\net6.0\FocusApi.MvcApplicationPartsAssemblyInfo.cs
+E:\root\programming\React_CS\focusBackend\FocusApi\obj\Release\net6.0\FocusApi.MvcApplicationPartsAssemblyInfo.cache

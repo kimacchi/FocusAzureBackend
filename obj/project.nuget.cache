@@ -1,14 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "XLsNO3nixnvWcOvJW600eaDypAz6Rq9WVXLJlGd8vtrI0++xHv52ATw46yATeAu7zpyVQiRwIubxPUchGSb8VQ==",
-  "success": false,
+  "dgSpecHash": "AzbByW6zWkpT46gXtNI/e0ssz+vBbzZtNc16pKguHdDI75ebPMG0VuvOhr0QzF/4NQc2LihnIH3Vq11BbrAlRA==",
+  "success": true,
   "projectFilePath": "E:\\root\\programming\\React_CS\\focusBackend\\FocusApi\\FocusApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\shift\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\shift\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\shift\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",
     "C:\\Users\\shift\\.nuget\\packages\\messagepackanalyzer\\2.1.152\\messagepackanalyzer.2.1.152.nupkg.sha512",
-    "C:\\Users\\shift\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\7.0.0-preview.3.22178.4\\microsoft.aspnetcore.mvc.newtonsoftjson.7.0.0-preview.3.22178.4.nupkg.sha512",
     "C:\\Users\\shift\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.0\\microsoft.aspnetcore.razor.language.6.0.0.nupkg.sha512",
     "C:\\Users\\shift\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
     "C:\\Users\\shift\\.nuget\\packages\\microsoft.build\\17.0.0\\microsoft.build.17.0.0.nupkg.sha512",
@@ -183,15 +182,5 @@
     "C:\\Users\\shift\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\shift\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1202",
-      "level": "Error",
-      "message": "Microsoft.AspNetCore.Mvc.NewtonsoftJson 7.0.0-preview.3.22178.4 paketi, net6.0 (.NETCoreApp,Version=v6.0) ile uyumlu değil. Microsoft.AspNetCore.Mvc.NewtonsoftJson 7.0.0-preview.3.22178.4 paketi şunları destekler: net7.0 (.NETCoreApp,Version=v7.0)",
-      "libraryId": "Microsoft.AspNetCore.Mvc.NewtonsoftJson",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  "logs": []
 }
