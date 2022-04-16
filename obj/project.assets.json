@@ -9752,11 +9752,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "e:\\root\\programming\\React_CS\\focusBackend\\FocusApi\\FocusApi.csproj",
+      "projectUniqueName": "E:\\root\\programming\\React_CS\\focusBackend\\FocusApi\\FocusApi.csproj",
       "projectName": "FocusApi",
-      "projectPath": "e:\\root\\programming\\React_CS\\focusBackend\\FocusApi\\FocusApi.csproj",
+      "projectPath": "E:\\root\\programming\\React_CS\\focusBackend\\FocusApi\\FocusApi.csproj",
       "packagesPath": "C:\\Users\\shift\\.nuget\\packages\\",
-      "outputPath": "e:\\root\\programming\\React_CS\\focusBackend\\FocusApi\\obj\\",
+      "outputPath": "E:\\root\\programming\\React_CS\\focusBackend\\FocusApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\visual studio shared\\NuGetPackages",
@@ -9772,6 +9772,7 @@
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

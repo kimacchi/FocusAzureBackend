@@ -262,3 +262,6 @@ E:\root\programming\React_CS\focusBackend\FocusApi\obj\Release\net6.0\refint\Foc
 E:\root\programming\React_CS\focusBackend\FocusApi\obj\Release\net6.0\FocusApi.pdb
 E:\root\programming\React_CS\focusBackend\FocusApi\obj\Release\net6.0\FocusApi.genruntimeconfig.cache
 E:\root\programming\React_CS\focusBackend\FocusApi\obj\Release\net6.0\ref\FocusApi.dll
+E:\root\programming\React_CS\focusBackend\FocusApi\bin\Release\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+E:\root\programming\React_CS\focusBackend\FocusApi\bin\Release\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+E:\root\programming\React_CS\focusBackend\FocusApi\bin\Release\net6.0\Newtonsoft.Json.Bson.dll

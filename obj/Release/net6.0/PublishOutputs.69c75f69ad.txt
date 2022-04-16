@@ -7,6 +7,8 @@ E:\root\programming\React_CS\focusBackend\FocusApi\bin\Release\net6.0\publish\Fo
 E:\root\programming\React_CS\focusBackend\FocusApi\bin\Release\net6.0\publish\Humanizer.dll
 E:\root\programming\React_CS\focusBackend\FocusApi\bin\Release\net6.0\publish\MessagePack.dll
 E:\root\programming\React_CS\focusBackend\FocusApi\bin\Release\net6.0\publish\MessagePack.Annotations.dll
+E:\root\programming\React_CS\focusBackend\FocusApi\bin\Release\net6.0\publish\Microsoft.AspNetCore.JsonPatch.dll
+E:\root\programming\React_CS\focusBackend\FocusApi\bin\Release\net6.0\publish\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 E:\root\programming\React_CS\focusBackend\FocusApi\bin\Release\net6.0\publish\Microsoft.AspNetCore.Razor.Language.dll
 E:\root\programming\React_CS\focusBackend\FocusApi\bin\Release\net6.0\publish\Microsoft.Bcl.AsyncInterfaces.dll
 E:\root\programming\React_CS\focusBackend\FocusApi\bin\Release\net6.0\publish\Microsoft.Build.Locator.dll
@@ -50,6 +52,7 @@ E:\root\programming\React_CS\focusBackend\FocusApi\bin\Release\net6.0\publish\Mi
 E:\root\programming\React_CS\focusBackend\FocusApi\bin\Release\net6.0\publish\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
 E:\root\programming\React_CS\focusBackend\FocusApi\bin\Release\net6.0\publish\Microsoft.Win32.SystemEvents.dll
 E:\root\programming\React_CS\focusBackend\FocusApi\bin\Release\net6.0\publish\Newtonsoft.Json.dll
+E:\root\programming\React_CS\focusBackend\FocusApi\bin\Release\net6.0\publish\Newtonsoft.Json.Bson.dll
 E:\root\programming\React_CS\focusBackend\FocusApi\bin\Release\net6.0\publish\NuGet.Common.dll
 E:\root\programming\React_CS\focusBackend\FocusApi\bin\Release\net6.0\publish\NuGet.Configuration.dll
 E:\root\programming\React_CS\focusBackend\FocusApi\bin\Release\net6.0\publish\NuGet.DependencyResolver.Core.dll

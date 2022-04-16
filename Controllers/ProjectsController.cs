@@ -83,6 +83,7 @@ namespace FocusApi.Controllers
                 return NotFound();
             }
             patchEntity.ApplyTo(entity, ModelState);
+            await _context.SaveChangesAsync();
             return Ok(entity);
         }
 
