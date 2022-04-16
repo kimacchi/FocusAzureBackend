@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc.NewtonsoftJson;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using FocusApi.Models;
@@ -36,7 +38,7 @@ namespace FocusApi.Controllers
             
             if (activity == null)
             {
-                return NotFound();
+                return NoContent();
             }
 
             return activity;
@@ -74,32 +76,15 @@ namespace FocusApi.Controllers
         }
 
         [HttpPatch("{id}")]
-        public async Task<IActionResult> PatchActivity(int id, Activity activity)
+        public async Task<IActionResult> PatchActivity(int id, [FromBody] JsonPatchDocument<Activity> patchEntity)
         {
-            if (id != activity.activityId)
-            {
-                return BadRequest();
+            var entity = await _context.Activities.FindAsync(id);
+            if(entity == null){
+                return NotFound();
             }
+            patchEntity.ApplyTo(entity, ModelState);
 
-            _context.Entry(activity).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!ActivityExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return NoContent();
+            return Ok(entity);
         }
 
         // POST: api/Activities
@@ -125,7 +110,7 @@ namespace FocusApi.Controllers
 
             _context.Activities.Remove(activity);
             await _context.SaveChangesAsync();
-
+            
             return NoContent();
         }
 

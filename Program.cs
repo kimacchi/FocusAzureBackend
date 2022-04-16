@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using FocusApi.Models;
-// using Microsoft.AspNetCore.Mvc;
+
 
 // var  MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
@@ -17,7 +17,7 @@ builder.Services.AddCors(options =>
                       });
 });
 
-builder.Services.AddControllers();
+builder.Services.AddControllers().AddNewtonsoftJson();
 // builder.Services.AddControllers().AddNewtonsoftJson();
 builder.Services.AddDbContext<ActivityContext>(opt =>
     opt.UseInMemoryDatabase("ActivityList"));

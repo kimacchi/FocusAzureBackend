@@ -5,6 +5,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.NewtonsoftJson;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.EntityFrameworkCore;
 using FocusApi.Models;
 
@@ -74,32 +76,14 @@ namespace FocusApi.Controllers
         }
 
         [HttpPatch("{id}")]
-        public async Task<IActionResult> PatchProject(int id, Project project)
+        public async Task<IActionResult> PatchProject(int id, [FromBody] JsonPatchDocument<Project> patchEntity)
         {
-            if (id != project.projectId)
-            {
-                return BadRequest();
+            var entity = await _context.Projects.FindAsync(id);
+            if(entity == null){
+                return NotFound();
             }
-
-            _context.Entry(project).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!ProjectExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return NoContent();
+            patchEntity.ApplyTo(entity, ModelState);
+            return Ok(entity);
         }
 
         // POST: api/Projects
