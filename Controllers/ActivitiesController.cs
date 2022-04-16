@@ -30,10 +30,10 @@ namespace FocusApi.Controllers
 
         // GET: api/Activities/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Activity>> GetActivity(int id)
+        public async Task<ActionResult<IEnumerable<Activity>>> GetActivity(int id)
         {
-            var activity = await _context.Activities.FindAsync(id);
-
+            var activity = await _context.Activities.Where(ele => ele.userId.Equals(id)).ToListAsync();
+            
             if (activity == null)
             {
                 return NotFound();

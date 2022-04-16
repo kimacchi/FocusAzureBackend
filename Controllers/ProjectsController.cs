@@ -30,9 +30,9 @@ namespace FocusApi.Controllers
 
         // GET: api/Projects/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Project>> GetProject(int id)
+        public async Task<ActionResult<IEnumerable<Project>>> GetProject(int id)
         {
-            var project = await _context.Projects.FindAsync(id);
+            var project = await _context.Projects.Where(ele => ele.userId.Equals(id)).ToListAsync();
 
             if (project == null)
             {
